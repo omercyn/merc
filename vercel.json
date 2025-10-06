@@ -8,9 +8,9 @@
     "routes": [
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
-     "outputDirectory": "public" ,
+    "outputDirectory": "public" ,
 
-     "scripts": {
+    "scripts": {
     "post-install-cmd": [
         "mkdir -p /tmp/storage/framework/cache",
         "mkdir -p /tmp/storage/framework/sessions",
