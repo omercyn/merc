@@ -8,5 +8,14 @@
     "routes": [
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
-     "outputDirectory": "public" 
+     "outputDirectory": "public" ,
+
+     "scripts": {
+    "post-install-cmd": [
+        "mkdir -p /tmp/storage/framework/cache",
+        "mkdir -p /tmp/storage/framework/sessions",
+        "mkdir -p /tmp/storage/framework/views",
+        "mkdir -p /tmp/storage/logs"
+    ]
+}
 }
